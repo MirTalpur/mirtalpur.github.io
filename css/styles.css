@@ -12,3 +12,21 @@ body{
 .featuredImg{
 	 margin-bottom: 15px;
 }
+
+.navbar-default {
+    background-color: #F8F8F8;
+    border-color: transparent;
+	background: transparent;
+	width: 100%;
+}
+.jumbotron{
+
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	width: 100%;
+	height: 100%;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	background-image: url('../images/birds.jpg');
+}
