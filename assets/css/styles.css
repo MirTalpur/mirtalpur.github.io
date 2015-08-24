@@ -174,7 +174,6 @@ a.dotted-link:hover {
   padding-top: 8px;
 }
 /* ======= Sections======= */
-
 .sections-wrapper {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -182,7 +181,7 @@ a.dotted-link:hover {
 .section {
   margin-bottom: 30px;
 }
-/*here*/
+
 .section .section-inner {
   background: #fff;
   padding: 30px;
@@ -197,9 +196,22 @@ a.dotted-link:hover {
   color: #18bc9c;
   text-align: center;
 }
+#school{
+  color: #18bc9c;
+}
 #projects{
   color: #18bc9c;
   text-align: center;
+}
+#languages{
+   color: #18bc9c;
+}
+#otherProjects{
+  color: #18bc9c;
+  text-align: center;
+}
+#skills{
+  color: #18bc9c;
 }
 #workExperience{
   color: #18bc9c;
@@ -209,8 +221,9 @@ a.dotted-link:hover {
   margin-right: 5px;
   font-size: 14px;
 }
+/**here**/
 .section .section-inner .heading{
-  color: #666666;
+  color: #479fc8;
 }
 /* About Section */
 /* Latest Section */
@@ -226,7 +239,7 @@ a.dotted-link:hover {
   font-size: 12px;
 }
 .latest .item .title a {
-  color: #778492;
+  color: #479fc8;
 }
 .latest .item .title a:hover {
   color: #5f6b77;
@@ -247,6 +260,7 @@ a.dotted-link:hover {
   font-size: 20px;
 }
 .latest .featured .summary {
+  margin-top: 10px;
   margin-bottom: 30px;
   color: #778492;
 }
@@ -315,7 +329,7 @@ a.dotted-link:hover {
   line-height: 1.5;
 }
 .projects .item .title a {
-  color: #778492;
+  color: #479fc8;
 }
 .projects .item .title a:hover {
   color: #5f6b77;
@@ -329,6 +343,7 @@ a.dotted-link:hover {
   margin-top: 0;
   margin-bottom: 5px;
   line-height: 1.5;
+  color: #479fc8;
 }
 .experience .item .title .place {
   color: #999999;
@@ -341,7 +356,7 @@ a.dotted-link:hover {
   color: #666666;
 }
 .experience .item .title .year {
-  color: #999999;
+  color: #CCCC99;
   font-weight: normal;
 }
 /* Git section */
@@ -356,6 +371,7 @@ a.dotted-link:hover {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
+
 /* Info Section */
 .info .fa {
   margin-right: 15px;
@@ -401,37 +417,9 @@ a.dotted-link:hover {
 }
 .skills .skillset .level-bar-inner {
   height: 15px;
-  background: #66cb8c;
+  background: #18bc9c;
 }
-/* Testimonials section */
-.testimonials .item {
-  margin-bottom: 30px;
-}
-.testimonials .item:last-child {
-  margin-bottom: 0;
-}
-.testimonials .item .quote {
-  color: #666666;
-  font-size: 16px;
-  border-left-color: #9fdeb7;
-  margin-bottom: 15px;
-}
-.testimonials .item .quote .fa {
-  color: #79d19a;
-  margin-right: 15px;
-}
-.testimonials .item .source {
-  font-size: 14px;
-  padding-left: 30px;
-  font-weight: 500;
-}
-.testimonials .item .source .name {
-  color: #939ea9;
-  font-weight: 600;
-}
-.testimonials .item .source .title {
-  color: #999999;
-}
+
 /* Education section */
 .education .item {
   margin-bottom: 30px;
