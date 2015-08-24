@@ -24,6 +24,17 @@ h6 {
   font-family: 'Montserrat', sans-serif;
   color: #fff;
 }
+#mainNavBar>ul>li>a:hover{
+  background: #18bc9c;
+}
+#mainNavBar>ul>li>ul>li>a:hover{
+  background: #18bc9c;
+  color: #000;
+}
+#mainNavBar>ul>li>ul>li>a{
+  color: #fff;
+  background-color: #18bc9c;
+}
 #mainNavBar a{
   font-family: 'Montserrat', sans-serif;
   color: #fff;
