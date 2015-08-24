@@ -1,8 +1,8 @@
 /* ======= Base ======= */
 body {
   font-family: 'Lato', arial, sans-serif;
-  color: #434343;
-  background: #CCCCCC;
+  color: #3b3a36;
+  background: #fff;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -18,18 +18,18 @@ h6 {
   color: #778492;
 }
 .navbar{
-  background: #CCCC9A;
+  background: #2c3e50;
 }
 .navbar a{
   font-family: 'Montserrat', sans-serif;
-  color: #778492;
+  color: #fff;
 }
 #mainNavBar a{
   font-family: 'Montserrat', sans-serif;
-  color: #778492;
+  color: #fff;
 }
 a {
-  color: #3aaa64;
+  color: #18bc9c;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -61,6 +61,9 @@ a.btn {
     border-radius: 1px;
     background-color: #778492;
 }
+.navbar .navbar-brand:hover{
+  color: #18bc9c;
+}
 .btn .fa,
 a.btn .fa {
   margin-right: 5px;
@@ -71,17 +74,19 @@ a.btn:focus {
 }
 a.btn-cta-primary,
 .btn-cta-primary {
-  background: #666666;
-  border: 1px solid #666666;
+  background: #2c3e50;
+  border: 1px solid #993300;
   color: #fff;
   font-weight: 600;
   text-transform: uppercase;
+  border: 2px solid #fff;
 }
 a.btn-cta-primary:hover,
 .btn-cta-primary:hover {
-  background: #666666;
-  border: 1px solid #666666;
+  background: #18bc9c;
+  border: 1px solid #993300;
   color: #fff;
+  border: 2px solid #fff;
 }
 a.btn-cta-secondary,
 .btn-cta-secondary {
@@ -115,9 +120,10 @@ a.dotted-link:hover {
 
 /* ======= Header ======= */
 .header {
-   background: #CCCC9A;
+   background: #2c3e50;
    padding: 30px 0;
    border-top: none; solid #CCCC9A;
+   border-bottom: none;
 }
 .header .btn {
   margin-top: 60px;
@@ -127,13 +133,13 @@ a.dotted-link:hover {
   margin-right: 30px;
 }
 .header .profile-content .name {
-  color: #49515a;
+  color: #fff;
   font-size: 38px;
   margin-bottom: 5px;
   margin-top: 30px;
 }
 .header .profile-content .desc {
-  color: #778492;
+  color: #fff;
   font-family: "Lato", arial, sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -141,7 +147,7 @@ a.dotted-link:hover {
   margin-bottom: 15px;
 }
 .header .profile-content .social a {
-  background: #b0b7bf;
+  background: #2c3e50;
   width: 36px;
   height: 36px;
   display: inline-block;
@@ -155,15 +161,20 @@ a.dotted-link:hover {
   background-clip: padding-box;
   color: #fff;
   text-align: center;
+  border: 2px solid #fff;
+
 }
 .header .profile-content .social a:hover {
-  background: #778492;
+  border: solid 2px #fff;
+  color: #18bc9c;
+  background: #fff;
 }
 .header .profile-content .social a .fa {
   font-size: 20px;
   padding-top: 8px;
 }
 /* ======= Sections======= */
+
 .sections-wrapper {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -173,7 +184,7 @@ a.dotted-link:hover {
 }
 /*here*/
 .section .section-inner {
-  background: #CCCCCC;
+  background: #fff;
   padding: 30px;
 }
 .section .heading {
@@ -182,7 +193,18 @@ a.dotted-link:hover {
   color: #545e69;
   font-size: 24px;
 }
-
+#aboutMe{
+  color: #18bc9c;
+  text-align: center;
+}
+#projects{
+  color: #18bc9c;
+  text-align: center;
+}
+#workExperience{
+  color: #18bc9c;
+  text-align: center;
+}
 .section .content .more-link .fa {
   margin-right: 5px;
   font-size: 14px;
