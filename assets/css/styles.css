@@ -70,7 +70,10 @@ a.btn {
     width: 22px;
     height: 2px;
     border-radius: 1px;
-    background-color: #778492;
+    background-color: #fff;
+}
+.navbar-toggle:hover .icon-bar{
+  background-color: #18bc9c;
 }
 .navbar .navbar-brand:hover{
   color: #18bc9c;
