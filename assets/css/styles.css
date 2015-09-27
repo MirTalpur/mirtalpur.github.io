@@ -18,7 +18,7 @@ h6 {
   color: #778492;
 }
 .navbar{
-  background: #2c3e50;
+  background-image: url("../images/background.jpg");
 }
 .navbar a{
   font-family: 'Montserrat', sans-serif;
@@ -88,7 +88,6 @@ a.btn:focus {
 }
 a.btn-cta-primary,
 .btn-cta-primary {
-  background: #2c3e50;
   border: 1px solid #993300;
   color: #fff;
   font-weight: 600;
@@ -133,8 +132,7 @@ a.dotted-link:hover {
 }
 
 /* ======= Header ======= */
-.header {
-   background: #2c3e50;
+.header { 
    padding: 30px 0;
    border-top: none; solid #CCCC9A;
    border-bottom: none;
@@ -145,6 +143,7 @@ a.dotted-link:hover {
 }
 .header .profile-image {
   margin-right: 30px;
+  margin-left: 100px;
 }
 .header .profile-content .name {
   color: #fff;
@@ -161,7 +160,6 @@ a.dotted-link:hover {
   margin-bottom: 15px;
 }
 .header .profile-content .social a {
-  background: #2c3e50;
   width: 36px;
   height: 36px;
   display: inline-block;
@@ -257,6 +255,41 @@ a.dotted-link:hover {
 .latest .item .title a:hover {
   color: #5f6b77;
 }
+
+/* Testimonials section */
+#Testimonials{
+  color: #18bc9c;;
+}
+.testimonials .item {
+  margin-bottom: 30px;
+}
+.testimonials .item:last-child {
+  margin-bottom: 0;
+}
+.testimonials .item .quote {
+  color: #666666;
+  font-size: 16px;
+  border-left-color: #9fdeb7;
+  margin-bottom: 15px;
+}
+.testimonials .item .quote .fa {
+  color: #79d19a;
+  margin-right: 15px;
+}
+.testimonials .item .source {
+  font-size: 14px;
+  padding-left: 30px;
+  font-weight: 500;
+}
+.testimonials .item .source .name {
+  color: #939ea9;
+  font-weight: 600;
+}
+.testimonials .item .source .title {
+  color: #479fc8;
+}
+/*end*/
+
 .latest .item .project-image:hover {
   -webkit-opacity: 0.8;
   -moz-opacity: 0.8;
