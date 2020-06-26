@@ -36,7 +36,6 @@ bin/published.js
 test/**/public
 .gatsby-context.js
 .DS_Store
-public
 .cache
 .netlify
 

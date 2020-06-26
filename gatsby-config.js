@@ -4,7 +4,7 @@ module.exports = {
     siteDescription: 'Starter for Gatsby Theme Chronoblog',
     siteImage: '/banner.png', // main image of the site for metadata
     siteUrl: 'https://chronoblog-hacker.now.sh/',
-    pathPrefix: '/',
+    pathPrefix: '/mirtalpur.github.io',
     siteLanguage: 'en',
     ogLanguage: `en_US`,
     author: 'Site Author', // for example - 'Ivan Ganev'
