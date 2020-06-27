@@ -4,4 +4,4 @@ build:
 	cd chronoblog-site; npm run deploy;
 
 moveBuild:
-	cd chronoblog-site/public; cp * ../../
+	cd chronoblog-site/public; cp -r * ../../
