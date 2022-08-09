@@ -1,91 +1,112 @@
 module.exports = {
   siteMetadata: {
-    siteTitle: 'Chronoblog Profile Starter',
-    siteDescription: 'Starter for Gatsby Theme Chronoblog',
-    siteImage: '/banner.png', // main image of the site for metadata
-    siteUrl: 'https://chronoblog-profile.now.sh/',
-    pathPrefix: '/',
-    siteLanguage: 'en',
-    ogLanguage: `en_US`,
-    author: 'Site Author', // for example - 'Ivan Ganev'
-    authorDescription: 'short author description', // short text about the author
-    avatar: '/avatar.jpg',
-    twitterSite: '', // website account on twitter
-    twitterCreator: '', // creator account on twitter
-    social: [
-      {
-        icon: `envelope`,
-        url: `mailto:mymail@mail.com`,
-      },
-      {
-        icon: `twitter`,
-        url: `https://twitter.com/ganevru`,
-      },
-      {
-        icon: `github`,
-        url: `https://github.com/Chronoblog/gatsby-theme-chronoblog`,
-      },
-      {
-        icon: `node-js`,
-        url: `https://www.npmjs.com/package/gatsby-theme-chronoblog`,
-      },
-    ],
+    title: 'mirtalpur.github.io',
+    author: 'Ali Talpur',
+    description: 'Ali Talpur',
+    siteUrl: 'https://mirtalpur.github.io',
   },
   plugins: [
     {
-      resolve: 'gatsby-theme-chronoblog',
+      resolve: `gatsby-source-filesystem`,
       options: {
-        uiText: {
-          // ui text fot translate
-          feedShowMoreButton: 'show more',
-          feedSearchPlaceholder: 'search',
-          cardReadMoreButton: 'read more →',
-          allTagsButton: 'all tags',
-        },
-        feedItems: {
-          // global settings for feed items
-          limit: 50,
-          yearSeparator: false,
-          yearSeparatorSkipFirst: true,
-          contentTypes: {
-            links: {
-              beforeTitle: '🔗 ',
+        path: `${__dirname}/src/pages`,
+        name: 'pages',
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 590,
+              backgroundColor: '#FFFFFF',
             },
           },
-        },
-        feedSearch: {
-          symbol: '🔍',
-        },
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
+          },
+          'gatsby-remark-prismjs',
+          'gatsby-remark-copy-linked-files',
+          'gatsby-remark-smartypants',
+        ],
       },
     },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Chronoblog Gatsby Theme`,
-        short_name: `Chronoblog`,
-        start_url: `/`,
-        background_color: `#fff`,
-        theme_color: `#3a5f7d`,
-        display: `standalone`,
-        icon: `src/assets/favicon.png`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-sitemap`,
-    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
-        trackingId: 'UA-XXXXXXXXX-X',
+        trackingId: `UA-119965457-1`,
+        respectDNT: true,
       },
     },
     {
-      resolve: `gatsby-plugin-disqus`,
+      resolve: 'gatsby-plugin-feed',
       options: {
-        // replace "chronoblog-profile" with your own disqus shortname
-        shortname: `chronoblog-profile`,
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.filter(item => 
+                item.node.frontmatter.type !== 'page').map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.excerpt,
+                  date: edge.node.frontmatter.date,
+                  url: edge.node.frontmatter.passthroughUrl || site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  custom_elements: [{ 'content:encoded': edge.node.html }],
+                })
+              })
+            },
+            query: `
+              {
+                allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+                  edges {
+                    node {
+                      excerpt
+                      html
+                      fields { slug }
+                      frontmatter {
+                        title
+                        date
+                        type
+                        passthroughUrl
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: '/rss.xml',
+            title: 'weiran.co',
+          },
+        ],
       },
     },
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: 'gatsby-plugin-typography',
+      options: {
+        pathToConfigModule: 'src/utils/typography',
+      },
+    },
+    `gatsby-plugin-remove-serviceworker`,
+    `gatsby-plugin-netlify`, // has to be last
   ],
-};
+}

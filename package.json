@@ -1,75 +1,67 @@
 {
-  "name": "chronoblog-profile",
+  "name": "weiran.co",
+  "description": "weiran.co",
   "version": "1.0.0",
-  "private": true,
-  "description": "gatsby-starter-chronoblog-profile",
-  "keywords": [],
-  "license": "MIT",
-  "author": "Ivan Ganev <ganevio92@gmail.com>",
-  "scripts": {
-    "build": "gatsby build",
-    "clean": "gatsby clean",
-    "start": "gatsby develop"
-  },
-  "eslintConfig": {
-    "env": {
-      "browser": true,
-      "es6": true,
-      "node": true
-    },
-    "parserOptions": {
-      "ecmaFeatures": {
-        "impliedStrict": true,
-        "jsx": true
-      },
-      "ecmaVersion": 2019,
-      "sourceType": "module",
-      "useJSXTextNode": true
-    },
-    "settings": {
-      "import/resolver": {
-        "node": {
-          "extensions": [
-            ".js",
-            ".jsx",
-            ".ts",
-            ".tsx",
-            "md",
-            "mdx"
-          ]
-        }
-      },
-      "react": {
-        "version": "detect"
-      }
-    },
-    "plugins": [
-      "prettier"
-    ],
-    "extends": [
-      "plugin:prettier/recommended"
-    ],
-    "rules": {
-      "prettier/prettier": "warn"
-    }
+  "author": "Weiran Zhang <weiran@zhang.me.uk>",
+  "bugs": {
+    "url": "https://github.com/weiran/weiran.co/issues"
   },
   "dependencies": {
-    "gatsby": "^2.23.3",
-    "gatsby-plugin-disqus": "^1.1.4",
-    "gatsby-plugin-google-analytics": "^2.1.23",
-    "gatsby-plugin-manifest": "^2.4.11",
-    "gatsby-plugin-sitemap": "^2.2.21",
-    "gatsby-theme-chronoblog": "^0.26.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "gatsby": "^4.11.1",
+    "gatsby-plugin-feed": "^4.11.1",
+    "gatsby-plugin-google-analytics": "^4.11.0",
+    "gatsby-plugin-netlify": "^4.2.0",
+    "gatsby-plugin-offline": "^5.11.1",
+    "gatsby-plugin-react-helmet": "^5.11.0",
+    "gatsby-plugin-remove-serviceworker": "^1.0.0",
+    "gatsby-plugin-sharp": "^4.11.1",
+    "gatsby-plugin-typography": "^4.11.0",
+    "gatsby-remark-copy-linked-files": "^5.11.0",
+    "gatsby-remark-images": "^6.11.1",
+    "gatsby-remark-prismjs": "^6.11.0",
+    "gatsby-remark-responsive-iframe": "^5.11.0",
+    "gatsby-remark-smartypants": "^5.11.0",
+    "gatsby-source-filesystem": "^4.11.1",
+    "gatsby-transformer-remark": "^5.11.1",
+    "gatsby-transformer-sharp": "^4.11.0",
+    "lodash": "^4.17.21",
+    "prismjs": "^1.27.0",
+    "react": "^18.0.0",
+    "react-typography": "^0.16.20",
+    "typeface-lato": "1.1.13",
+    "typography": "^0.16.21",
+    "typography-theme-judah": "^0.16.19"
   },
   "devDependencies": {
-    "eslint": "^6.6.0",
-    "eslint-config-prettier": "^6.3.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "prettier": "^1.18.2"
+    "eslint": "^8.12.0",
+    "eslint-config-react-app": "^7.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.4.0",
+    "gh-pages": "^3.2.3",
+    "prettier": "^2.6.2",
+    "react-dom": "^18.0.0",
+    "react-helmet": "^6.1.0",
+    "typescript": "^4.6.3"
   },
-  "engines": {
-    "node": ">=12.21.0"
+  "homepage": "https://github.com/weiran/weiran.co#readme",
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "UNLICENSED",
+  "private": true,
+  "main": "n/a",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weiran/weiran.co.git"
+  },
+  "scripts": {
+    "dev": "gatsby develop",
+    "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "fix-semi": "./node_modules/.bin/eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
   }
 }
