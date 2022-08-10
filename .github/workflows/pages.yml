@@ -63,21 +63,21 @@ jobs:
           #
           # You may remove this line if you want to manage the configuration yourself.
           static_site_generator: gatsby
-      - name: Restore cache
-        uses: actions/cache@v3
-        with:
-          path: |
-            public
-            .cache
-          key: ${{ runner.os }}-gatsby-build-${{ hashFiles('public') }}
-          restore-keys: |
-            ${{ runner.os }}-gatsby-build-
+#       - name: Restore cache
+#         uses: actions/cache@v3
+#         with:
+#           path: |
+#             public
+#             .cache
+#           key: ${{ runner.os }}-gatsby-build-${{ hashFiles('public') }}
+#           restore-keys: |
+#             ${{ runner.os }}-gatsby-build-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Gatsby
         env:
           PREFIX_PATHS: 'true'
-        run: ${{ steps.detect-package-manager.outputs.manager }} run build --legacy-peer-deps
+        run: ${{ steps.detect-package-manager.outputs.manager }} run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
