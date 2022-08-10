@@ -94,7 +94,7 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
-            title: 'weiran.co',
+            title: 'mirtalpur.github.io',
           },
         ],
       },
