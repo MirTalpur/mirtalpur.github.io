@@ -20,7 +20,7 @@ class BlogPostTemplate extends React.Component {
         <div>
           <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
           <h1>
-            <Title title={post.frontmatter.title} passthroughUrl={post.frontmatter.passthroughUrl} slug={post.slug} />
+            <Title title={post.frontmatter.title} slug={post.slug} />
           </h1>
           <p className='post-meta'
             style={{
@@ -96,7 +96,6 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        passthroughUrl
       }
     }
   }

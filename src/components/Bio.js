@@ -15,7 +15,7 @@ class Bio extends React.Component {
       >
         <img
           src={profilePic}
-          alt={`Weiran Zhang`}
+          alt={`Ali Talpur`}
           style={{
             marginRight: rhythm(1 / 2),
             marginTop: 'auto',
@@ -28,15 +28,11 @@ class Bio extends React.Component {
         <p style={{
           marginBottom: 0
         }}>
-          Hi, I'm <strong>Weiran Zhang</strong>. I work as a Software 
-          Engineering Manager at Capital One. I have a passion for iOS and
-          building thriving software teams. This blog is a place
-          for me to document things I've learned and things I find interesting. 
-          {' '}
-          <a href='https://twitter.com/weiran'>
-            You should follow me on Twitter
-          </a>
-          .
+          Hi, I'm <strong>Ali Talpur</strong>. I use this site to share and bookmark 
+          various things, mostly my work with computers. I work as a SRE @ Coalition Inc. 
+          I love solving problems of scale and distributed systems. At night I enjoy 
+          working as an indie hacker, creating, building projects and perfecting my craft.
+          This site reflects my own opinions and not my employee.
         </p>
       </div>
     )

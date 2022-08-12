@@ -35,7 +35,7 @@ class Template extends React.Component {
           >
             <img
               src={logoPic}
-              alt={`weiran.co`}
+              alt={`mirtalpur.me`}
               style={{
                 width: rhythm(14),
               }}
@@ -58,7 +58,7 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-            ⌘<br />weiran.co
+            ⌘<br />mirtalpur.me
           </Link>
         </h3>
       )
