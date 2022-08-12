@@ -3,8 +3,8 @@ title: Contact
 type: page
 ---
 
-The best way to get in touch is via [@weiran on Twitter](https://twitter.com/weiran).
+The best way to get in touch is via [linkedin](https://www.linkedin.com/in/mir-ali-talpur/).
 
 Other social media accounts:
-* [GitHub](https://github.com/weiran)
-* [LinkedIn](https://www.linkedin.com/in/weiranz)
+* [GitHub](https://github.com/MirTalpur)
+* [LinkedIn](https://www.linkedin.com/in/mir-ali-talpur/)

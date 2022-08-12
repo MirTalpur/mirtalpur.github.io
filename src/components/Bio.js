@@ -29,7 +29,7 @@ class Bio extends React.Component {
           marginBottom: 0
         }}>
           Hi, I'm <strong>Ali Talpur</strong>. I use this site to share and bookmark 
-          various things, mostly my work with computers. I work as a SRE @ Coalition Inc. 
+          various things, mostly my work with computers. I work as a SRE @ Coalition Inc.
           I love solving problems of scale and distributed systems. At night I enjoy 
           working as an indie hacker, creating, building projects and perfecting my craft.
           This site reflects my own opinions and not my employee.
