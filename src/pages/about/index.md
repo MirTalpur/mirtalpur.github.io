@@ -5,7 +5,7 @@ type: page
 [UCSD](https://ucsd.edu/)
 [Coalition Inc](https://coalitioninc.com)
 
-Hi, I’m Ali Talpur. I’m currently working on the Platform Team @ [Coalition Inc.](https://coalitioninc.com) Cyber risk and security have piqued my interest recently and it’s an exciting time to be in a field with tremendous growth and opportunities.
+Hi, I’m Ali Talpur. I’m currently working on the Platform Team @[Coalition Inc.](https://coalitioninc.com) Cyber risk and security have piqued my interest recently and it’s an exciting time to be in a field with tremendous growth and opportunities.
 
 Looking back on my life my passion for technology started at an early age when I took apart TVs, and video game systems to figure out how they worked underneath the hood luckily for me my parents didn’t mind. Later, in my teenage years, I found my love for Linux while just being bored during one summer vacation. An unexpected youtube video showed me the difference between Linux and windows while I was trying to fix my parent's windows computer at the time. While learning more about how operating systems work, I became more curious and successfully brute-forced my wifi.
 
