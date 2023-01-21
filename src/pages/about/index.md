@@ -2,7 +2,7 @@
 title: About
 type: page
 ---
-Hi, I’m Ali Talpur. I currently work on the Platform Team @[Coalition Inc.](https://coalitioninc.com) Cyber risk and security have recently piqued my interest and it’s an exciting time to be in a field with tremendous growth and opportunities.
+Hi there, I’m Ali Talpur. I currently work on the Platform Team @[Coalition Inc.](https://coalitioninc.com) Cyber risk and Security have recently piqued my interest and it’s an exciting time to be in a field with tremendous growth and opportunities.
 
 Looking back on my life, my passion for technology started at an early age. I took apart TVs and video game systems to figure out how they worked underneath the hood. Luckily for me, my parents didn't mind. Later, during my teenage years, I found my love for Linux while I was bored during one summer vacation. An unexpected YouTube video showed me the difference between Linux and Windows while I was trying to fix my parents' Windows computer at the time. As I learned more about how operating systems work, I became more curious and successfully brute-forced my wifi.
 
