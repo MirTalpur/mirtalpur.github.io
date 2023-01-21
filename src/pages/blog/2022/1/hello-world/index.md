@@ -2,14 +2,8 @@
 title: "Hello World!"
 date: "2022-08-10T12:00:00.000Z"
 ---
+Hello, World! I'll be using this space to share my thoughts on a variety of topics that interest me, including finance, technology, cybersecurity, gaming, travel, and more. If you're curious about who I am, you can find more information about me on my [about page](https://mirtalpur.github.io/about)..
 
-Hello, world! I'll be utilizing this site for my thoughts what you can find here are mostly topics that pique my interests.
+During the day, I spend most of my time working on platforms, distributed systems, developer productivity, building services (APIs), Infrastructure as Code (IAC), and Kubernetes. At night, I like to work on side projects/products or read technical and non-technical books. I also enjoy gaming in my free time.
 
-Some of my interests include finance, tech, cybersecurity, gaming, travel, and more. Here’s a bit more [about me](https://mirtalpur.github.io/about).
-
-Most days I spend my time working on platforms, distributed systems, developer productivity, building services(APIs), IAC (Infrastructure as Code), and k8s.
-
-At night I usually like to work on side [projects/products](https://mirtalpur.github.io/projects) or I try to read tech books, and books in general. I also have
-nights where I game the night away.
-
-My motivation behind this site is to have some external accountability for initiatives I'm undertaking, have a place to share my thoughts/ideas, and possibly help individuals running into similar issues in their careers.
+The main motivation behind this blog is to hold myself accountable for the initiatives I'm undertaking, share my thoughts and ideas, and possibly help individuals who are facing similar challenges in their careers.
